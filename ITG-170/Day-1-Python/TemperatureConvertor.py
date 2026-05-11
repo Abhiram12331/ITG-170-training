@@ -1,2 +1,2 @@
-temp= int(input("Enter the temperature in celsius:"))
-print("Your temperature in Farenhit: ",temp*1.8+32)
+temp= int(input("Enter the temperature in Celsius:"))
+print("Your temperature in Fahrenheit: ",temp*1.8+32)
