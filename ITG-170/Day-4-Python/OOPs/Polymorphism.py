@@ -16,6 +16,8 @@ class Vehicle:
 class Car(Vehicle):
     def start(self):
         print('Car is running...')
+    def stop(self):
+        print('Car is stopped...')
 
 
 class Truck(Vehicle):
@@ -38,3 +40,4 @@ v.start()
 c.start()
 t.start()
 m.start()
+c.stop()
