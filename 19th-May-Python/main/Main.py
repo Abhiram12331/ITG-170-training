@@ -10,3 +10,11 @@ def base_url():
 @app.get('/hello/{name}')
 def hello_world(name:str):
     return f'Hello {name}'
+
+@app.put('/user/{id}')
+def hello_world(id:int):
+    return f'Found user  {id} as Santosh'
+
+@app.put('/user/{id}')
+def hello_world(id:int):
+    return f'Found user  {id} as Santosh'
