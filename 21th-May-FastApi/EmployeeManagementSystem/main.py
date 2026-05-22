@@ -12,7 +12,8 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(title="Employee Management System")
 
 # Include routers
-app.include_router(register_router, prefix="/auth", tags=["Auth"])
-app.include_router(login_router, prefix="/auth", tags=["Auth"])
-app.include_router(logout_router, prefix="/auth", tags=["Auth"])
+routers= [login_router, register_router, logout_router]
+
+for router in routers:
+    app.include_router(router, prefix="/auth", tags=["auth"])
 app.include_router(employee_router, prefix="/employees", tags=["Employees"])
